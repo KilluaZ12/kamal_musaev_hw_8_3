@@ -45,7 +45,6 @@ class SecondFragment : Fragment() {
         val stringExists = stringArray.contains(inputSecondAnswer)
         val thirdLengthValid = inputInn.length >= 16
 
-
         if (numberExists && stringExists && thirdLengthValid) {
             val fragment = SecondBottomSheetFragment()
             fragment.show(parentFragmentManager, fragment.tag)
